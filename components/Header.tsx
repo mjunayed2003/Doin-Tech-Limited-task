@@ -8,18 +8,18 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#0047FF] text-white relative z-50">
-      {/* 1440px Container with 120px Desktop Height */}
-      <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-16 xl:px-20 h-20 lg:h-[120px] flex items-center justify-between relative">
+    <header className="w-full bg-transparent text-white relative z-50 shrink-0">
+      {/* 1440px Container with proper Header Height */}
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-14 xl:px-16 h-16 sm:h-20 lg:h-[72px] flex items-center justify-between relative">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/Header_Logo.png"
             alt="ByteSpace Logo"
-            width={171}
-            height={37}
+            width={152}
+            height={33}
             priority
-            className="w-[145px] sm:w-[171px] h-auto object-contain"
+            className="w-[128px] sm:w-[148px] h-auto object-contain"
           />
         </Link>
 
