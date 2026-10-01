@@ -19,7 +19,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full flex-1 flex flex-col justify-between overflow-hidden">
+    <section className="relative w-full flex-1 flex flex-col justify-start lg:justify-between overflow-hidden">
       {/* 3D Floating Shapes spanning the full width edges */}
       {/* Top-Left Yellow Coil (Flush against left edge with zero gap) */}
       <div className="hidden lg:block absolute left-0 top-1 xl:top-3 z-20 pointer-events-none animate-float-edge-y">
@@ -149,7 +149,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Visual: Full Width Arc & Anchored Student / Cards */}
-      <div className="relative w-full flex-1 flex items-end justify-center min-h-[280px] xs:min-h-[320px] sm:min-h-[380px] lg:min-h-0 select-none overflow-visible">
+      <div className="relative w-full mt-3 sm:mt-5 lg:mt-0 flex-1 flex items-end justify-center min-h-[250px] xs:min-h-[280px] sm:min-h-[380px] lg:min-h-0 select-none overflow-visible">
         {/* Full-Width Lime Green Arc in Background */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1480px] xl:max-w-[1650px] 2xl:max-w-[1800px] pointer-events-none z-0 px-2 sm:px-4 flex justify-center">
           <Image

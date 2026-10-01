@@ -11,8 +11,8 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-white flex flex-col overflow-x-hidden relative">
-      {/* 1. Hero Section Container with Dynamic Viewport Height for iOS/Android */}
-      <div className="w-full bg-grid-pattern relative min-h-[100dvh] lg:h-screen flex flex-col justify-between overflow-hidden">
+      {/* 1. Hero Section Container: Compact on mobile, full-screen on desktop */}
+      <div className="w-full bg-grid-pattern relative min-h-0 lg:h-screen flex flex-col lg:justify-between overflow-hidden">
         <Header />
         <HeroSection />
       </div>
