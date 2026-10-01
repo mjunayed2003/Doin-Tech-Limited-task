@@ -22,7 +22,7 @@ export default function HeroSection() {
     <section className="relative w-full flex-1 flex flex-col justify-start lg:justify-between overflow-hidden">
       {/* 3D Floating Shapes spanning the full width edges */}
       {/* Top-Left Yellow Coil (Flush against left edge with zero gap) */}
-      <div className="hidden lg:block absolute left-0 top-1 xl:top-3 z-20 pointer-events-none animate-float-edge-y">
+      <div className="hidden lg:block absolute -left-[9px] xl:-left-[12px] 2xl:-left-[14px] top-1 xl:top-3 z-20 pointer-events-none animate-float-edge-y">
         <Image
           src="/images/shape-coil-left.png"
           alt="Decorative 3D Coil"
@@ -46,7 +46,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom-Left White Torus / Donut */}
-      <div className="hidden lg:block absolute left-2 xl:left-6 2xl:left-12 bottom-4 xl:bottom-8 z-20 pointer-events-none animate-float-drift">
+      <div className="hidden lg:block absolute -left-1 xl:left-1 2xl:left-4 bottom-4 xl:bottom-8 z-20 pointer-events-none animate-float-drift">
         <Image
           src="/images/shape-torus.png"
           alt="Decorative 3D Torus"
@@ -58,7 +58,7 @@ export default function HeroSection() {
       </div>
 
       {/* Top-Right Lime Cylinder (Flush against right edge with zero gap) */}
-      <div className="hidden lg:block absolute right-0 top-1 xl:top-2 z-20 pointer-events-none animate-float-edge-y">
+      <div className="hidden lg:block absolute -right-[9px] xl:-right-[12px] 2xl:-right-[14px] top-1 xl:top-2 z-20 pointer-events-none animate-float-edge-y">
         <Image
           src="/images/shape-cylinder.png"
           alt="Decorative 3D Cylinder"
@@ -82,7 +82,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom-Right White Spiral */}
-      <div className="hidden lg:block absolute right-2 xl:right-8 2xl:right-14 bottom-6 xl:bottom-10 z-20 pointer-events-none animate-float-reverse">
+      <div className="hidden lg:block absolute -right-1 xl:right-1 2xl:right-4 bottom-6 xl:bottom-10 z-20 pointer-events-none animate-float-reverse">
         <Image
           src="/images/shape-spiral.png"
           alt="Decorative 3D Spiral"
