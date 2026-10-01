@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Course {
   id: string;
@@ -184,7 +185,8 @@ export default function CoursesSection() {
         {/* 6 Course Cards Grid */}
         <div className="mt-12 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
           {courses.map((course) => (
-            <div
+            <Link
+              href={`/courses/${course.id}`}
               key={course.id}
               className="bg-white rounded-[26px] p-4 sm:p-4.5 border border-[#E9ECEF] shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-xl hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
             >
@@ -277,7 +279,7 @@ export default function CoursesSection() {
                   /lifetime
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

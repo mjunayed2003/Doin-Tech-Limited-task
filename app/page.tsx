@@ -4,6 +4,9 @@ import PartnersSection from "@/components/PartnersSection";
 import CoursesSection from "@/components/CoursesSection";
 import CategoriesSection from "@/components/CategoriesSection";
 import GrowthSection from "@/components/GrowthSection";
+import CreatorSection from "@/components/CreatorSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -25,8 +28,19 @@ export default function Home() {
 
       {/* 5. Professional Growth & Course Management Dual Section */}
       <GrowthSection />
+
+      {/* 6. Unlock Your Potential as a Creator Banner */}
+      <CreatorSection />
+
+      {/* 7. Community Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* 8. Footer Section */}
+      <Footer />
     </main>
   );
 }
+
+
 
 

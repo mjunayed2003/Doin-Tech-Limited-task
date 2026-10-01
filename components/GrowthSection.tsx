@@ -16,12 +16,12 @@ export default function GrowthSection() {
       className="w-full relative overflow-hidden border-t border-slate-100/80 flex justify-center"
       style={{
         background: `
-          radial-gradient(circle 680px at 44% 6%, rgba(204, 255, 0, 0.32) 0%, rgba(204, 255, 0, 0.08) 45%, transparent 75%),
-          radial-gradient(circle 520px at 5% 10%, rgba(204, 255, 0, 0.18) 0%, transparent 65%),
-          radial-gradient(circle 500px at 2% 48%, rgba(59, 130, 246, 0.18) 0%, transparent 65%),
-          radial-gradient(circle 520px at 96% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 65%),
-          radial-gradient(circle 600px at 5% 92%, rgba(204, 255, 0, 0.44) 0%, rgba(204, 255, 0, 0.12) 45%, transparent 70%),
-          radial-gradient(circle 580px at 94% 92%, rgba(59, 130, 246, 0.22) 0%, transparent 70%),
+          radial-gradient(circle 750px at 45% 6%, rgba(204, 255, 0, 0.35) 0%, rgba(204, 255, 0, 0.08) 45%, transparent 75%),
+          radial-gradient(circle 550px at 4% 10%, rgba(204, 255, 0, 0.20) 0%, transparent 65%),
+          radial-gradient(circle 550px at 2% 46%, rgba(59, 130, 246, 0.18) 0%, transparent 65%),
+          radial-gradient(circle 550px at 96% 18%, rgba(59, 130, 246, 0.16) 0%, transparent 65%),
+          radial-gradient(circle 650px at 4% 92%, rgba(204, 255, 0, 0.48) 0%, rgba(204, 255, 0, 0.14) 45%, transparent 70%),
+          radial-gradient(circle 620px at 94% 88%, rgba(59, 130, 246, 0.22) 0%, transparent 70%),
           #FFFFFF
         `,
       }}
@@ -44,9 +44,13 @@ export default function GrowthSection() {
         {/* ========================================================= */}
         {/* ROW 1: Your Path to Professional Growth Starts Here!       */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative">
+          {/* Row 1 specific local ambient glow */}
+          <div className="absolute -top-16 left-1/3 w-[450px] h-[450px] bg-[#CCFF00]/25 rounded-full blur-[110px] pointer-events-none -z-0" />
+          <div className="absolute top-1/2 -left-16 w-[340px] h-[340px] bg-[#3B82F6]/14 rounded-full blur-[90px] pointer-events-none -z-0" />
+
           {/* Left Content Column (5 Cols) */}
-          <div className="lg:col-span-5 space-y-6 sm:space-y-7">
+          <div className="lg:col-span-5 space-y-6 sm:space-y-7 relative z-10">
             <h2 className="text-[#040819] font-bold text-3xl sm:text-4xl lg:text-[46px] leading-[115%] tracking-[-0.02em]">
               Your Path to Professional <br className="hidden sm:inline" />
               Growth Starts Here!
@@ -169,7 +173,15 @@ export default function GrowthSection() {
         {/* ========================================================= */}
         {/* ROW 2: Create & Manage Courses Easily.                     */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative">
+          {/* Row 2 specific local ambient glows matching screenshot */}
+          {/* Vibrant lime flare at bottom-left corner */}
+          <div className="absolute -bottom-16 -left-16 w-[420px] h-[420px] bg-[#CCFF00]/40 rounded-full blur-[100px] pointer-events-none -z-0" />
+          {/* Soft sky blue aura behind top-left blue cards */}
+          <div className="absolute -top-10 -left-12 w-[340px] h-[340px] bg-[#3B82F6]/18 rounded-full blur-[90px] pointer-events-none -z-0" />
+          {/* Soft sky blue aura behind checklist on bottom-right */}
+          <div className="absolute -bottom-10 -right-12 w-[400px] h-[400px] bg-[#3B82F6]/18 rounded-full blur-[95px] pointer-events-none -z-0" />
+
           {/* Left Visual Column (7 Cols) */}
           <div className="lg:col-span-7 flex items-center justify-center relative select-none order-2 lg:order-1">
             <div className="relative w-full max-w-[620px] xl:max-w-[660px] min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center">
@@ -282,7 +294,7 @@ export default function GrowthSection() {
           </div>
 
           {/* Right Content Column (5 Cols) */}
-          <div className="lg:col-span-5 space-y-6 sm:space-y-7 order-1 lg:order-2">
+          <div className="lg:col-span-5 space-y-6 sm:space-y-7 order-1 lg:order-2 relative z-10">
             <h2 className="text-[#040819] font-bold text-3xl sm:text-4xl lg:text-[46px] leading-[115%] tracking-[-0.02em]">
               Create & Manage <br className="hidden sm:inline" />
               Courses Easily.

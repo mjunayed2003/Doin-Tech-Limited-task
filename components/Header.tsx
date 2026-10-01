@@ -14,7 +14,7 @@ export default function Header() {
         {/* Left: Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/Header_Logo.png"
+            src="/images/Header_Logo.png"
             alt="ByteSpace Logo"
             width={152}
             height={33}
