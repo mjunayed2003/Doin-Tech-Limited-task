@@ -114,25 +114,25 @@ export default function CoursesSection() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading & Subtitle */}
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.18]">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.18] px-2">
             Discover Your Passion, <br className="hidden sm:inline" />
             Build Your Skills
           </h2>
-          <p className="mt-4 text-xs sm:text-sm md:text-[15px] text-slate-500 max-w-[680px] mx-auto leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-xs sm:text-sm md:text-[15px] text-slate-500 max-w-[680px] mx-auto leading-relaxed px-3">
             At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.
           </p>
         </div>
 
-        {/* Category Filter Pills (3 Rows) */}
-        <div className="mt-10 sm:mt-12 flex flex-col items-center gap-2.5 sm:gap-3 select-none">
+        {/* Category Filter Pills (3 Rows with mobile horizontal scroll) */}
+        <div className="mt-8 sm:mt-12 flex flex-col items-center gap-2.5 sm:gap-3 select-none w-full">
           {/* Row 1 */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+          <div className="w-full overflow-x-auto no-scrollbar flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 py-1 px-4 -mx-4 sm:mx-0 sm:px-0">
             {row1Categories.map((cat) => (
               <button
                 key={cat}
                 type="button"
                 onClick={() => setActiveCategory(cat)}
-                className={`text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 rounded-full transition-all duration-200 cursor-pointer ${
+                className={`text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2 rounded-full transition-all duration-200 cursor-pointer shrink-0 active:scale-95 ${
                   activeCategory === cat
                     ? "bg-[#CCFF00] text-slate-950 font-semibold shadow-xs"
                     : "bg-[#F4F5F7] text-slate-700 hover:bg-slate-200"
@@ -144,13 +144,13 @@ export default function CoursesSection() {
           </div>
 
           {/* Row 2 */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+          <div className="w-full overflow-x-auto no-scrollbar flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 py-1 px-4 -mx-4 sm:mx-0 sm:px-0">
             {row2Categories.map((cat) => (
               <button
                 key={cat}
                 type="button"
                 onClick={() => setActiveCategory(cat)}
-                className={`text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 rounded-full transition-all duration-200 cursor-pointer ${
+                className={`text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2 rounded-full transition-all duration-200 cursor-pointer shrink-0 active:scale-95 ${
                   activeCategory === cat
                     ? "bg-[#CCFF00] text-slate-950 font-semibold shadow-xs"
                     : "bg-[#F4F5F7] text-slate-700 hover:bg-slate-200"
@@ -162,13 +162,13 @@ export default function CoursesSection() {
           </div>
 
           {/* Row 3 */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+          <div className="w-full overflow-x-auto no-scrollbar flex sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-2.5 py-1 px-4 -mx-4 sm:mx-0 sm:px-0">
             {row3Categories.map((cat) => (
               <button
                 key={cat}
                 type="button"
                 onClick={() => setActiveCategory(cat)}
-                className={`text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 rounded-full transition-all duration-200 cursor-pointer ${
+                className={`text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2 rounded-full transition-all duration-200 cursor-pointer shrink-0 active:scale-95 ${
                   activeCategory === cat
                     ? "bg-[#CCFF00] text-slate-950 font-semibold shadow-xs"
                     : cat === "+ More"
@@ -183,7 +183,7 @@ export default function CoursesSection() {
         </div>
 
         {/* 6 Course Cards Grid */}
-        <div className="mt-12 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7">
           {courses.map((course) => (
             <Link
               href={`/courses/${course.id}`}

@@ -96,23 +96,23 @@ export default function HeroSection() {
       {/* Top Section: Full Width Headline & Search Area */}
       <div className="w-full px-4 sm:px-6 lg:px-8 relative z-30 text-center pt-2 sm:pt-4 shrink-0">
         {/* Main Heading matching Figma inspect properties */}
-        <h1 className="text-white font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[72px] leading-[120%] tracking-[-0.01em] max-w-[935px] mx-auto text-center">
+        <h1 className="text-white font-semibold text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[72px] leading-[118%] tracking-[-0.01em] max-w-[935px] mx-auto text-center px-1 sm:px-4">
           Get Access to Hundreds Courses Available
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-2.5 sm:mt-3 text-white/80 text-xs sm:text-sm md:text-base max-w-[620px] mx-auto font-normal leading-relaxed px-2">
+        <p className="mt-2 sm:mt-3 text-white/80 text-xs sm:text-sm md:text-base max-w-[620px] mx-auto font-normal leading-relaxed px-3">
           Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
         </p>
 
-        {/* Search Bar matching screenshot */}
+        {/* Search Bar with iOS zoom-safe text-base font */}
         <div className="mt-4 sm:mt-6 flex items-center justify-center">
           <form
             onSubmit={handleSearch}
-            className="flex items-center justify-center gap-2.5 sm:gap-3 w-full max-w-[480px]"
+            className="flex items-center justify-center gap-2 sm:gap-3 w-full max-w-[480px]"
           >
             {/* White Pill Input */}
-            <div className="flex items-center bg-white rounded-full px-4 sm:px-5 py-2 sm:py-2.5 w-full shadow-[0_8px_25px_rgba(0,0,0,0.15)]">
+            <div className="flex items-center bg-white rounded-full px-4 sm:px-5 py-2.5 sm:py-2.5 w-full shadow-[0_8px_25px_rgba(0,0,0,0.15)]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-gray-400 shrink-0 mr-2.5"
@@ -133,14 +133,14 @@ export default function HeroSection() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Course, topic, creator"
-                className="w-full bg-transparent text-gray-800 placeholder-gray-400 text-xs sm:text-sm md:text-base font-normal focus:outline-none"
+                className="w-full bg-transparent text-gray-800 placeholder-gray-400 text-base sm:text-sm md:text-base font-normal focus:outline-none"
               />
             </div>
 
             {/* Lime Pill Search Button */}
             <button
               type="submit"
-              className="bg-[#CCFF00] hover:bg-[#b8eb00] active:scale-95 text-slate-950 font-semibold text-xs sm:text-sm md:text-base px-5 sm:px-7 py-2 sm:py-2.5 rounded-full transition-all duration-200 shrink-0 shadow-[0_8px_25px_rgba(0,0,0,0.15)] cursor-pointer"
+              className="bg-[#CCFF00] hover:bg-[#b8eb00] active:scale-95 text-slate-950 font-semibold text-xs sm:text-sm md:text-base px-5 sm:px-7 py-2.5 sm:py-2.5 rounded-full transition-all duration-200 shrink-0 shadow-[0_8px_25px_rgba(0,0,0,0.15)] cursor-pointer"
             >
               Search
             </button>
@@ -149,7 +149,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Visual: Full Width Arc & Anchored Student / Cards */}
-      <div className="relative w-full flex-1 flex items-end justify-center min-h-[300px] sm:min-h-[380px] lg:min-h-0 select-none overflow-visible">
+      <div className="relative w-full flex-1 flex items-end justify-center min-h-[280px] xs:min-h-[320px] sm:min-h-[380px] lg:min-h-0 select-none overflow-visible">
         {/* Full-Width Lime Green Arc in Background */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1480px] xl:max-w-[1650px] 2xl:max-w-[1800px] pointer-events-none z-0 px-2 sm:px-4 flex justify-center">
           <Image
@@ -158,14 +158,14 @@ export default function HeroSection() {
             width={1149}
             height={442}
             priority
-            className="w-full max-h-[380px] sm:max-h-[440px] md:max-h-[480px] object-contain object-bottom"
+            className="w-full max-h-[240px] xs:max-h-[300px] sm:max-h-[440px] md:max-h-[480px] object-contain object-bottom"
           />
         </div>
 
         {/* Centered Student & Floating Cards Container */}
         <div className="relative z-10 flex items-end justify-center w-full max-w-[740px] lg:max-w-[820px] shrink-0 bottom-0">
           {/* Student with Laptop (man.png) */}
-          <div className="w-[280px] sm:w-[370px] md:w-[430px] lg:w-[470px] xl:w-[500px] shrink-0 bottom-0 relative z-10">
+          <div className="w-[220px] xs:w-[260px] sm:w-[350px] md:w-[430px] lg:w-[470px] xl:w-[500px] shrink-0 bottom-0 relative z-10">
             <Image
               src="/man.png"
               alt="Student with laptop and headphones"
@@ -177,7 +177,7 @@ export default function HeroSection() {
           </div>
 
           {/* Floating Card 1: UI/UX Design (Top-Left of student) */}
-          <div className="absolute z-20 left-1 sm:left-4 md:left-6 lg:left-4 xl:left-6 top-[10%] sm:top-[12%] md:top-[14%] bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.18)] px-3.5 sm:px-4 py-2 sm:py-3 text-left border border-slate-100/80 animate-float-slow hover:scale-105 transition-transform duration-300">
+          <div className="absolute z-20 left-0 xs:left-1 sm:left-4 md:left-6 lg:left-4 xl:left-6 top-[4%] xs:top-[6%] sm:top-[12%] md:top-[14%] bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.18)] px-3 sm:px-4 py-1.5 sm:py-3 text-left border border-slate-100/80 animate-float-slow hover:scale-105 transition-transform duration-300 scale-[0.72] xs:scale-[0.82] sm:scale-95 md:scale-100 origin-top-left">
             <h4 className="text-slate-900 font-bold text-xs sm:text-sm md:text-base leading-snug">
               UI/UX Design
             </h4>
@@ -187,7 +187,7 @@ export default function HeroSection() {
           </div>
 
           {/* Floating Card 2: Learning Progress (Top-Right of student) */}
-          <div className="absolute z-20 right-1 sm:right-4 md:right-6 lg:right-4 xl:right-6 top-[15%] sm:top-[17%] md:top-[19%] bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.18)] p-3 sm:p-4 min-w-[140px] sm:min-w-[170px] md:min-w-[190px] text-left border border-slate-100/80 animate-float-reverse hover:scale-105 transition-transform duration-300">
+          <div className="absolute z-20 right-0 xs:right-1 sm:right-4 md:right-6 lg:right-4 xl:right-6 top-[8%] xs:top-[10%] sm:top-[17%] md:top-[19%] bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.18)] p-2.5 sm:p-4 min-w-[130px] sm:min-w-[170px] md:min-w-[190px] text-left border border-slate-100/80 animate-float-reverse hover:scale-105 transition-transform duration-300 scale-[0.72] xs:scale-[0.82] sm:scale-95 md:scale-100 origin-top-right">
             <span className="text-[10px] sm:text-xs font-semibold text-slate-500 block leading-tight">
               Learning Progress
             </span>
@@ -201,7 +201,7 @@ export default function HeroSection() {
           </div>
 
           {/* Floating Card 3: Happy Students (Bottom-Left of student) */}
-          <div className="absolute z-20 -left-2 sm:left-2 md:left-4 lg:left-0 xl:left-2 bottom-[8%] sm:bottom-[10%] bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.18)] p-2.5 sm:p-3.5 min-w-[170px] sm:min-w-[195px] md:min-w-[215px] text-left border border-slate-100/80 animate-float-drift hover:scale-105 transition-transform duration-300">
+          <div className="absolute z-20 left-0 xs:left-1 sm:left-2 md:left-4 lg:left-0 xl:left-2 bottom-[2%] xs:bottom-[4%] sm:bottom-[8%] md:bottom-[10%] bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.18)] p-2 sm:p-3.5 min-w-[155px] sm:min-w-[195px] md:min-w-[215px] text-left border border-slate-100/80 animate-float-drift hover:scale-105 transition-transform duration-300 scale-[0.72] xs:scale-[0.82] sm:scale-95 md:scale-100 origin-bottom-left">
             <h4 className="text-slate-900 font-bold text-[11px] sm:text-xs md:text-sm leading-tight">
               Happy Students
             </h4>
@@ -222,12 +222,12 @@ export default function HeroSection() {
             </div>
 
             {/* Avatar Stack */}
-            <div className="flex items-center mt-2">
+            <div className="flex items-center mt-1.5 sm:mt-2">
               {studentAvatars.map((src, idx) => (
                 <div
                   key={idx}
-                  className={`relative w-5 h-5 sm:w-6 sm:h-6 rounded-full overflow-hidden ring-2 ring-white ${
-                    idx > 0 ? "-ml-1.5 sm:-ml-2" : ""
+                  className={`relative w-4.5 h-4.5 sm:w-6 sm:h-6 rounded-full overflow-hidden ring-2 ring-white ${
+                    idx > 0 ? "-ml-1 sm:-ml-2" : ""
                   }`}
                 >
                   <Image
@@ -239,7 +239,7 @@ export default function HeroSection() {
                   />
                 </div>
               ))}
-              <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#CCFF00] text-slate-950 font-bold text-[9px] sm:text-[10px] flex items-center justify-center -ml-1.5 sm:-ml-2 ring-2 ring-white">
+              <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 rounded-full bg-[#CCFF00] text-slate-950 font-bold text-[8px] sm:text-[10px] flex items-center justify-center -ml-1 sm:-ml-2 ring-2 ring-white">
                 2K+
               </div>
             </div>

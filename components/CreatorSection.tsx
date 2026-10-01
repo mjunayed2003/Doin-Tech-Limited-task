@@ -29,7 +29,7 @@ export default function CreatorSection() {
           alt="3D Decorative Coil"
           width={130}
           height={240}
-          className="w-[85px] sm:w-[115px] md:w-[135px] lg:w-[155px] h-auto object-contain drop-shadow-2xl"
+          className="w-[60px] sm:w-[115px] md:w-[135px] lg:w-[155px] h-auto object-contain drop-shadow-2xl"
         />
       </div>
 
@@ -45,7 +45,7 @@ export default function CreatorSection() {
       </div>
 
       {/* 3. Mid-Left White Cone (Flush against left border, pointing inwards) */}
-      <div className="absolute left-0 top-[52%] sm:top-[50%] -translate-y-1/2 z-10 pointer-events-none animate-float-slow">
+      <div className="hidden md:block absolute left-0 top-[52%] sm:top-[50%] -translate-y-1/2 z-10 pointer-events-none animate-float-slow">
         <Image
           src="/shape-cone.png"
           alt="3D White Cone"
@@ -56,8 +56,8 @@ export default function CreatorSection() {
       </div>
 
       {/* 4. Bottom-Left Large Lime 3D Torus Ring (Tilted, bottom cut by border) */}
-      <div className="absolute left-[3%] sm:left-[5%] lg:left-[6%] -bottom-10 sm:-bottom-14 lg:-bottom-20 z-10 pointer-events-none animate-float-drift">
-        <div className="relative w-[130px] sm:w-[180px] md:w-[220px] lg:w-[260px] h-auto drop-shadow-[0_16px_36px_rgba(0,0,0,0.4)] -rotate-12">
+      <div className="absolute left-[2%] sm:left-[5%] lg:left-[6%] -bottom-6 sm:-bottom-14 lg:-bottom-20 z-10 pointer-events-none animate-float-drift">
+        <div className="relative w-[95px] sm:w-[180px] md:w-[220px] lg:w-[260px] h-auto drop-shadow-[0_16px_36px_rgba(0,0,0,0.4)] -rotate-12">
           <Image
             src="/shape-torus.png"
             alt="3D Lime Torus"
@@ -90,13 +90,13 @@ export default function CreatorSection() {
           alt="3D White Cylinder"
           width={125}
           height={230}
-          className="w-[85px] sm:w-[115px] md:w-[135px] lg:w-[160px] h-auto object-contain drop-shadow-2xl"
+          className="w-[60px] sm:w-[115px] md:w-[135px] lg:w-[160px] h-auto object-contain drop-shadow-2xl"
         />
       </div>
 
       {/* 7. Bottom-Right Prominent Lime 3D Spring (Large vertical spring) */}
-      <div className="absolute right-0 sm:right-3 lg:right-6 -bottom-8 sm:-bottom-12 lg:-bottom-16 z-10 pointer-events-none animate-float-reverse">
-        <div className="relative w-[100px] sm:w-[140px] md:w-[175px] lg:w-[210px] h-auto drop-shadow-[0_16px_36px_rgba(0,0,0,0.4)]">
+      <div className="absolute right-0 sm:right-3 lg:right-6 -bottom-6 sm:-bottom-12 lg:-bottom-16 z-10 pointer-events-none animate-float-reverse">
+        <div className="relative w-[85px] sm:w-[140px] md:w-[175px] lg:w-[210px] h-auto drop-shadow-[0_16px_36px_rgba(0,0,0,0.4)]">
           <Image
             src="/shape-spring-left.png"
             alt="3D Lime Spring"
@@ -111,23 +111,23 @@ export default function CreatorSection() {
       {/* ========================================================= */}
       {/* Central Content (Heading, Subtitle, CTA Button)           */}
       {/* ========================================================= */}
-      <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-16 text-center relative z-20 flex flex-col items-center justify-center">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-10 lg:px-16 text-center relative z-20 flex flex-col items-center justify-center">
         {/* Main Heading */}
-        <h2 className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[44px] leading-[120%] tracking-[-0.01em] max-w-[820px] mx-auto text-center">
+        <h2 className="text-white font-semibold text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-[44px] leading-[120%] tracking-[-0.01em] max-w-[820px] mx-auto text-center px-1">
           Unlock Your Potential as a <br className="hidden sm:inline" />
           Creator with ByteSpace
         </h2>
 
         {/* Subtitle - Exact 3-line format matching Figma inspect */}
-        <p className="mt-4 sm:mt-5 text-white/85 text-xs sm:text-sm md:text-[15px] font-['Satoshi',sans-serif] leading-[160%] max-w-[890px] mx-auto text-center px-2 sm:px-4 font-normal">
+        <p className="mt-3.5 sm:mt-5 text-white/85 text-xs sm:text-sm md:text-[15px] font-['Satoshi',sans-serif] leading-[160%] max-w-[890px] mx-auto text-center px-2 sm:px-4 font-normal">
           Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.
         </p>
 
         {/* CTA Button centered */}
-        <div className="mt-7 sm:mt-8">
+        <div className="mt-6 sm:mt-8">
           <button
             type="button"
-            className="bg-[#CCFF00] hover:bg-[#b8eb00] hover:scale-105 active:scale-95 text-slate-950 font-semibold text-sm sm:text-base px-8 sm:px-9 py-3 sm:py-3.5 rounded-full transition-all duration-200 shadow-[0_8px_25px_rgba(0,0,0,0.18)] cursor-pointer"
+            className="bg-[#CCFF00] hover:bg-[#b8eb00] hover:scale-105 active:scale-95 text-slate-950 font-semibold text-xs sm:text-base px-7 sm:px-9 py-2.5 sm:py-3.5 rounded-full transition-all duration-200 shadow-[0_8px_25px_rgba(0,0,0,0.18)] cursor-pointer"
           >
             Join as Creator
           </button>

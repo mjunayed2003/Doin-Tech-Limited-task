@@ -40,23 +40,23 @@ export default function GrowthSection() {
       </svg>
 
       {/* Main 1440px Canvas Container */}
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-20 py-20 sm:py-24 lg:py-28 flex flex-col justify-center gap-28 sm:gap-36 lg:gap-40 relative z-10">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16 xl:px-20 py-14 sm:py-24 lg:py-28 flex flex-col justify-center gap-16 sm:gap-36 lg:gap-40 relative z-10">
         {/* ========================================================= */}
         {/* ROW 1: Your Path to Professional Growth Starts Here!       */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center relative">
           {/* Row 1 specific local ambient glow */}
           <div className="absolute -top-16 left-1/3 w-[450px] h-[450px] bg-[#CCFF00]/25 rounded-full blur-[110px] pointer-events-none -z-0" />
           <div className="absolute top-1/2 -left-16 w-[340px] h-[340px] bg-[#3B82F6]/14 rounded-full blur-[90px] pointer-events-none -z-0" />
 
           {/* Left Content Column (5 Cols) */}
-          <div className="lg:col-span-5 space-y-6 sm:space-y-7 relative z-10">
-            <h2 className="text-[#040819] font-bold text-3xl sm:text-4xl lg:text-[46px] leading-[115%] tracking-[-0.02em]">
+          <div className="lg:col-span-5 space-y-5 sm:space-y-7 relative z-10">
+            <h2 className="text-[#040819] font-bold text-2xl xs:text-3xl sm:text-4xl lg:text-[46px] leading-[115%] tracking-[-0.02em]">
               Your Path to Professional <br className="hidden sm:inline" />
               Growth Starts Here!
             </h2>
 
-            <div className="space-y-3.5 text-[#82868E] text-sm sm:text-base md:text-[17px] leading-[165%] font-['Satoshi',sans-serif] max-w-[500px]">
+            <div className="space-y-3 text-[#82868E] text-xs sm:text-base md:text-[17px] leading-[165%] font-['Satoshi',sans-serif] max-w-[500px]">
               <p>
                 Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey.
               </p>
@@ -65,31 +65,31 @@ export default function GrowthSection() {
               </p>
             </div>
 
-            {/* 3 Stats Counters */}
-            <div className="pt-4 sm:pt-6 flex items-center gap-8 sm:gap-14">
+            {/* 3 Stats Counters on mobile grid */}
+            <div className="pt-3 sm:pt-6 grid grid-cols-3 gap-3 sm:flex sm:items-center sm:gap-14">
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-[#0047FF] tracking-tight">
+                <div className="text-2xl sm:text-4xl font-bold text-[#0047FF] tracking-tight">
                   12K
                 </div>
-                <div className="text-xs sm:text-sm text-[#82868E] font-medium mt-1">
+                <div className="text-[11px] sm:text-sm text-[#82868E] font-medium mt-0.5 sm:mt-1">
                   Students
                 </div>
               </div>
 
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-[#0047FF] tracking-tight">
+                <div className="text-2xl sm:text-4xl font-bold text-[#0047FF] tracking-tight">
                   70+
                 </div>
-                <div className="text-xs sm:text-sm text-[#82868E] font-medium mt-1">
+                <div className="text-[11px] sm:text-sm text-[#82868E] font-medium mt-0.5 sm:mt-1">
                   Courses
                 </div>
               </div>
 
               <div>
-                <div className="text-3xl sm:text-4xl font-bold text-[#0047FF] tracking-tight">
+                <div className="text-2xl sm:text-4xl font-bold text-[#0047FF] tracking-tight">
                   16
                 </div>
-                <div className="text-xs sm:text-sm text-[#82868E] font-medium mt-1">
+                <div className="text-[11px] sm:text-sm text-[#82868E] font-medium mt-0.5 sm:mt-1">
                   Creators
                 </div>
               </div>
@@ -97,40 +97,40 @@ export default function GrowthSection() {
           </div>
 
           {/* Right Visual Column (7 Cols) - Large Scale Composition */}
-          <div className="lg:col-span-7 flex items-center justify-center relative select-none">
-            <div className="relative w-full max-w-[620px] xl:max-w-[660px] min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center">
+          <div className="lg:col-span-7 flex items-center justify-center relative select-none overflow-hidden sm:overflow-visible">
+            <div className="relative w-full max-w-[620px] xl:max-w-[660px] min-h-[380px] xs:min-h-[440px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center">
               {/* 1. Behind the man: Full-sized Course Card (Top Left) */}
-              <div className="absolute left-0 sm:left-2 lg:left-4 top-0 sm:top-2 z-10 bg-white rounded-[26px] p-3.5 sm:p-4 shadow-[0_16px_40px_rgba(0,0,0,0.06)] border border-[#E9ECEF] w-[260px] sm:w-[310px] md:w-[330px]">
-                <div className="relative w-full aspect-[236/135] rounded-[16px] overflow-hidden bg-slate-100">
+              <div className="absolute left-0 sm:left-2 lg:left-4 top-0 sm:top-2 z-10 bg-white rounded-[20px] sm:rounded-[26px] p-2.5 sm:p-4 shadow-[0_16px_40px_rgba(0,0,0,0.06)] border border-[#E9ECEF] w-[190px] xs:w-[230px] sm:w-[310px] md:w-[330px]">
+                <div className="relative w-full aspect-[236/135] rounded-[14px] sm:rounded-[16px] overflow-hidden bg-slate-100">
                   <Image
                     src="/images/course-1.png"
                     alt="Learn Figma"
                     fill
-                    sizes="330px"
+                    sizes="(max-width: 640px) 230px, 330px"
                     className="object-cover"
                   />
                 </div>
-                <div className="mt-3">
-                  <h4 className="text-[#040819] font-bold text-sm sm:text-base line-clamp-1">
+                <div className="mt-2 sm:mt-3">
+                  <h4 className="text-[#040819] font-bold text-xs sm:text-base line-clamp-1">
                     Learn Figma fro...
                   </h4>
-                  <p className="text-xs text-[#82868E] mt-0.5">
+                  <p className="text-[10px] sm:text-xs text-[#82868E] mt-0.5">
                     by <span className="text-[#0047FF] font-medium">purepearl studio</span>
                   </p>
-                  <div className="mt-3 flex items-center justify-between">
-                    <span className="bg-[#F4F5F7] text-slate-600 text-xs font-semibold px-2.5 py-1 rounded-full">
+                  <div className="mt-2 sm:mt-3 flex items-center justify-between">
+                    <span className="bg-[#F4F5F7] text-slate-600 text-[10px] sm:text-xs font-semibold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full">
                       Beginner
                     </span>
-                    <span className="text-[#0047FF] font-bold text-sm sm:text-base">
-                      $25<span className="text-xs text-[#82868E] font-normal">/lifetime</span>
+                    <span className="text-[#0047FF] font-bold text-xs sm:text-base">
+                      $25<span className="text-[10px] sm:text-xs text-[#82868E] font-normal">/lifetime</span>
                     </span>
                   </div>
                 </div>
               </div>
 
               {/* 2. Behind the man: 3D Lime Spring (Top Right) */}
-              <div className="absolute right-6 sm:right-12 lg:right-16 top-2 sm:top-4 z-10 pointer-events-none">
-                <div className="relative w-20 h-28 sm:w-24 sm:h-34 drop-shadow-[0_10px_20px_rgba(204,255,0,0.55)]">
+              <div className="absolute right-3 sm:right-12 lg:right-16 top-2 sm:top-4 z-10 pointer-events-none">
+                <div className="relative w-14 h-20 sm:w-24 sm:h-34 drop-shadow-[0_10px_20px_rgba(204,255,0,0.55)]">
                   <Image
                     src="/shape-spring-left.png"
                     alt="3D Lime Spring"
@@ -142,8 +142,8 @@ export default function GrowthSection() {
                 </div>
               </div>
 
-              {/* 3. Central Prominent Figure: The Man (man.png) - Taller & commanding */}
-              <div className="relative z-20 w-[360px] sm:w-[440px] md:w-[500px] lg:w-[560px] xl:w-[600px] ml-12 sm:ml-16 lg:ml-20">
+              {/* 3. Central Prominent Figure: The Man (man.png) */}
+              <div className="relative z-20 w-[230px] xs:w-[280px] sm:w-[420px] md:w-[500px] lg:w-[560px] xl:w-[600px] ml-4 sm:ml-12 lg:ml-20">
                 <Image
                   src="/images/man.png"
                   alt="Student with laptop and headphones"
@@ -155,14 +155,14 @@ export default function GrowthSection() {
               </div>
 
               {/* 4. In front / overlapping: Learning Progress (Mid-Right) */}
-              <div className="absolute -right-2 sm:-right-4 lg:-right-6 top-36 sm:top-44 z-30 bg-white rounded-[22px] p-4 sm:p-5 min-w-[175px] sm:min-w-[205px] shadow-[0_16px_40px_rgba(0,0,0,0.10)] border border-[#E9ECEF] text-left">
-                <span className="text-xs font-semibold text-[#82868E] block leading-tight">
+              <div className="absolute right-0 sm:-right-4 lg:-right-6 top-28 xs:top-36 sm:top-44 z-30 bg-white rounded-[18px] sm:rounded-[22px] p-3 sm:p-5 min-w-[130px] sm:min-w-[205px] shadow-[0_16px_40px_rgba(0,0,0,0.10)] border border-[#E9ECEF] text-left scale-[0.76] xs:scale-[0.84] sm:scale-100 origin-top-right">
+                <span className="text-[10px] sm:text-xs font-semibold text-[#82868E] block leading-tight">
                   Learning Progress
                 </span>
-                <span className="text-3xl sm:text-4xl font-extrabold text-[#040819] block mt-1 tracking-tight">
+                <span className="text-2xl sm:text-4xl font-extrabold text-[#040819] block mt-0.5 sm:mt-1 tracking-tight">
                   55%
                 </span>
-                <div className="mt-3 h-2 w-full bg-[#F0F2F5] rounded-full overflow-hidden">
+                <div className="mt-2 sm:mt-3 h-1.5 sm:h-2 w-full bg-[#F0F2F5] rounded-full overflow-hidden">
                   <div className="h-full w-[55%] bg-[#CCFF00] rounded-full" />
                 </div>
               </div>
@@ -173,21 +173,18 @@ export default function GrowthSection() {
         {/* ========================================================= */}
         {/* ROW 2: Create & Manage Courses Easily.                     */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center relative">
           {/* Row 2 specific local ambient glows matching screenshot */}
-          {/* Vibrant lime flare at bottom-left corner */}
           <div className="absolute -bottom-16 -left-16 w-[420px] h-[420px] bg-[#CCFF00]/40 rounded-full blur-[100px] pointer-events-none -z-0" />
-          {/* Soft sky blue aura behind top-left blue cards */}
           <div className="absolute -top-10 -left-12 w-[340px] h-[340px] bg-[#3B82F6]/18 rounded-full blur-[90px] pointer-events-none -z-0" />
-          {/* Soft sky blue aura behind checklist on bottom-right */}
           <div className="absolute -bottom-10 -right-12 w-[400px] h-[400px] bg-[#3B82F6]/18 rounded-full blur-[95px] pointer-events-none -z-0" />
 
           {/* Left Visual Column (7 Cols) */}
-          <div className="lg:col-span-7 flex items-center justify-center relative select-none order-2 lg:order-1">
-            <div className="relative w-full max-w-[620px] xl:max-w-[660px] min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center">
+          <div className="lg:col-span-7 flex items-center justify-center relative select-none order-2 lg:order-1 overflow-hidden sm:overflow-visible">
+            <div className="relative w-full max-w-[620px] xl:max-w-[660px] min-h-[380px] xs:min-h-[440px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center">
               {/* 1. Behind the woman: Decorative 3D Lime Spring (Mid-Right) */}
-              <div className="absolute right-6 sm:right-12 lg:right-16 top-24 sm:top-30 z-10 pointer-events-none">
-                <div className="relative w-20 h-28 sm:w-24 sm:h-34 drop-shadow-[0_10px_20px_rgba(204,255,0,0.55)]">
+              <div className="absolute right-3 sm:right-12 lg:right-16 top-16 sm:top-30 z-10 pointer-events-none">
+                <div className="relative w-14 h-20 sm:w-24 sm:h-34 drop-shadow-[0_10px_20px_rgba(204,255,0,0.55)]">
                   <Image
                     src="/shape-spring-left.png"
                     alt="3D Lime Spring"
@@ -200,43 +197,41 @@ export default function GrowthSection() {
               </div>
 
               {/* 2. Floating Card 1: Total Revenue (Top Left) */}
-              <div className="absolute left-0 sm:left-2 lg:left-4 top-8 sm:top-12 z-15 bg-[#0047FF] rounded-[22px] p-4 sm:p-4.5 min-w-[170px] sm:min-w-[195px] text-white shadow-[0_16px_36px_rgba(0,71,255,0.36)]">
-                <div className="text-xs sm:text-[13px] font-semibold text-white">
+              <div className="absolute left-0 sm:left-2 lg:left-4 top-2 xs:top-4 sm:top-12 z-15 bg-[#0047FF] rounded-[18px] sm:rounded-[22px] p-3 sm:p-4.5 min-w-[130px] sm:min-w-[195px] text-white shadow-[0_16px_36px_rgba(0,71,255,0.36)] scale-[0.76] xs:scale-[0.84] sm:scale-100 origin-top-left">
+                <div className="text-[11px] sm:text-[13px] font-semibold text-white">
                   Total Revenue
                 </div>
-                <div className="text-[10px] sm:text-[11px] text-white/75 mt-0.5">
+                <div className="text-[9px] sm:text-[11px] text-white/75 mt-0.5">
                   July 1-28
                 </div>
-                <div className="text-2xl sm:text-[26px] font-bold mt-1 text-white tracking-tight">
+                <div className="text-xl sm:text-[26px] font-bold mt-0.5 sm:mt-1 text-white tracking-tight">
                   $120.29
                 </div>
-                {/* Lime Progress Bar inside Blue Card */}
-                <div className="mt-2.5 h-1.5 w-full bg-white/20 rounded-full overflow-hidden flex">
+                <div className="mt-2 sm:mt-2.5 h-1.5 w-full bg-white/20 rounded-full overflow-hidden flex">
                   <div className="h-full w-[72%] bg-[#CCFF00] rounded-full" />
                 </div>
               </div>
 
               {/* 3. Floating Card 2: Year to Date (Mid Left) */}
-              <div className="absolute left-2 sm:left-6 lg:left-8 top-44 sm:top-52 z-15 bg-[#0047FF] rounded-[22px] p-4 sm:p-4.5 min-w-[170px] sm:min-w-[195px] text-white shadow-[0_16px_36px_rgba(0,71,255,0.36)]">
-                <div className="text-xs sm:text-[13px] font-semibold text-white">
+              <div className="absolute left-0 sm:left-6 lg:left-8 top-28 xs:top-36 sm:top-52 z-15 bg-[#0047FF] rounded-[18px] sm:rounded-[22px] p-3 sm:p-4.5 min-w-[130px] sm:min-w-[195px] text-white shadow-[0_16px_36px_rgba(0,71,255,0.36)] scale-[0.76] xs:scale-[0.84] sm:scale-100 origin-top-left">
+                <div className="text-[11px] sm:text-[13px] font-semibold text-white">
                   Year to Date
                 </div>
-                <div className="text-[10px] sm:text-[11px] text-white/75 mt-0.5">
+                <div className="text-[9px] sm:text-[11px] text-white/75 mt-0.5">
                   2023
                 </div>
-                <div className="text-2xl sm:text-[26px] font-bold mt-1 text-white tracking-tight">
+                <div className="text-xl sm:text-[26px] font-bold mt-0.5 sm:mt-1 text-white tracking-tight">
                   $1,200.38
                 </div>
-                {/* Lime Pill Badge +12% */}
-                <div className="mt-2">
-                  <span className="bg-[#CCFF00] text-slate-950 font-bold text-[11px] px-2.5 py-0.5 rounded-full inline-block shadow-xs">
+                <div className="mt-1.5 sm:mt-2">
+                  <span className="bg-[#CCFF00] text-slate-950 font-bold text-[10px] sm:text-[11px] px-2 sm:px-2.5 py-0.5 rounded-full inline-block shadow-xs">
                     +12%
                   </span>
                 </div>
               </div>
 
-              {/* 4. Central Prominent Figure: The Woman (man2.png) - Taller & commanding */}
-              <div className="relative z-20 w-[340px] sm:w-[420px] md:w-[480px] lg:w-[530px] xl:w-[570px] -ml-4 sm:-ml-6 lg:-ml-8">
+              {/* 4. Central Prominent Figure: The Woman (man2.png) */}
+              <div className="relative z-20 w-[230px] xs:w-[270px] sm:w-[400px] md:w-[480px] lg:w-[530px] xl:w-[570px] -ml-2 sm:-ml-6 lg:-ml-8">
                 <Image
                   src="/images/man2.png"
                   alt="Instructor with tablet and headphones"
@@ -248,17 +243,17 @@ export default function GrowthSection() {
               </div>
 
               {/* 5. In front: Happy Students (Bottom Right, overlapping tablet) */}
-              <div className="absolute right-0 sm:right-2 lg:right-4 bottom-4 sm:bottom-8 z-30 bg-white rounded-[22px] p-3.5 sm:p-4 min-w-[200px] sm:min-w-[230px] shadow-[0_16px_40px_rgba(0,0,0,0.10)] border border-[#E9ECEF] text-left">
-                <h4 className="text-[#040819] font-bold text-xs sm:text-sm leading-tight">
+              <div className="absolute right-0 sm:right-2 lg:right-4 bottom-2 sm:bottom-8 z-30 bg-white rounded-[18px] sm:rounded-[22px] p-2.5 sm:p-4 min-w-[150px] sm:min-w-[230px] shadow-[0_16px_40px_rgba(0,0,0,0.10)] border border-[#E9ECEF] text-left scale-[0.76] xs:scale-[0.84] sm:scale-100 origin-bottom-right">
+                <h4 className="text-[#040819] font-bold text-[11px] sm:text-sm leading-tight">
                   Happy Students
                 </h4>
-                <div className="flex items-center gap-1 mt-0.5 text-[11px] font-bold text-slate-700">
+                <div className="flex items-center gap-1 mt-0.5 text-[10px] sm:text-[11px] font-bold text-slate-700">
                   <span>4.5 (240)</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="#FBBF24"
-                    className="w-3.5 h-3.5"
+                    className="w-3 sm:w-3.5 h-3 sm:h-3.5"
                   >
                     <path
                       fillRule="evenodd"
@@ -268,12 +263,12 @@ export default function GrowthSection() {
                   </svg>
                 </div>
 
-                <div className="flex items-center mt-2.5">
+                <div className="flex items-center mt-1.5 sm:mt-2.5">
                   {studentAvatars.map((src, idx) => (
                     <div
                       key={idx}
-                      className={`relative w-5 h-5 sm:w-6 sm:h-6 rounded-full overflow-hidden ring-2 ring-white ${
-                        idx > 0 ? "-ml-1.5" : ""
+                      className={`relative w-4.5 h-4.5 sm:w-6 sm:h-6 rounded-full overflow-hidden ring-2 ring-white ${
+                        idx > 0 ? "-ml-1 sm:-ml-1.5" : ""
                       }`}
                     >
                       <Image
@@ -285,7 +280,7 @@ export default function GrowthSection() {
                       />
                     </div>
                   ))}
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#CCFF00] text-slate-950 font-bold text-[10px] flex items-center justify-center -ml-1.5 ring-2 ring-white">
+                  <div className="w-4.5 h-4.5 sm:w-6 sm:h-6 rounded-full bg-[#CCFF00] text-slate-950 font-bold text-[8px] sm:text-[10px] flex items-center justify-center -ml-1 sm:-ml-1.5 ring-2 ring-white">
                     2K+
                   </div>
                 </div>

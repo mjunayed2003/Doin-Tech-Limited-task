@@ -43,7 +43,7 @@ export default function TestimonialsSection() {
 
   return (
     <section
-      className="w-full relative overflow-hidden py-20 sm:py-28 md:py-32 flex justify-center border-t border-slate-100"
+      className="w-full relative overflow-hidden py-14 sm:py-24 md:py-32 flex justify-center border-t border-slate-100"
       style={{
         background: `
           radial-gradient(circle 700px at 52% 16%, rgba(204, 255, 0, 0.22) 0%, rgba(204, 255, 0, 0.05) 45%, transparent 70%),
@@ -53,14 +53,14 @@ export default function TestimonialsSection() {
         `,
       }}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-20 relative z-10">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-10 lg:px-16 xl:px-20 relative z-10">
         {/* ========================================================= */}
         {/* Section Header (2-Column Layout: Heading & Subtitle)      */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start justify-between">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-12 items-start justify-between">
           {/* Left: Heading */}
           <div className="lg:col-span-6">
-            <h2 className="text-[#040819] font-bold text-3xl sm:text-4xl lg:text-[44px] leading-[115%] tracking-[-0.02em]">
+            <h2 className="text-[#040819] font-bold text-2xl xs:text-3xl sm:text-4xl lg:text-[44px] leading-[115%] tracking-[-0.02em]">
               Discover What Our <br />
               Community Is Saying
             </h2>
@@ -81,15 +81,15 @@ export default function TestimonialsSection() {
         {/* ========================================================= */}
         {/* 3 Testimonial Cards Grid                                  */}
         {/* ========================================================= */}
-        <div className="mt-12 sm:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 lg:gap-8">
+        <div className="mt-10 sm:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7 lg:gap-8">
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-[28px] sm:rounded-[32px] p-6 sm:p-7 md:p-8 border border-[#E9ECEF] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-xl hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-[22px] sm:rounded-[32px] p-5 sm:p-7 md:p-8 border border-[#E9ECEF] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-xl hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 {/* Round Avatar Profile */}
-                <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden shadow-xs shrink-0 ring-2 ring-slate-100">
+                <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden shadow-xs shrink-0 ring-2 ring-slate-100">
                   <Image
                     src={item.avatar}
                     alt={item.name}
@@ -100,8 +100,8 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* Name & Role */}
-                <div className="mt-5">
-                  <h3 className="text-[#040819] font-bold text-base sm:text-lg leading-snug">
+                <div className="mt-4 sm:mt-5">
+                  <h3 className="text-[#040819] font-bold text-sm sm:text-lg leading-snug">
                     {item.name}
                   </h3>
                   <p className="text-[#0047FF] font-medium text-xs sm:text-sm mt-0.5">
@@ -110,7 +110,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* Quote Text */}
-                <p className="mt-4 sm:mt-5 text-[#5E6470] text-xs sm:text-sm leading-[165%] font-['Satoshi',sans-serif]">
+                <p className="mt-3 sm:mt-5 text-[#5E6470] text-xs sm:text-sm leading-[165%] font-['Satoshi',sans-serif]">
                   {item.quote}
                 </p>
               </div>

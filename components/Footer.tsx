@@ -84,13 +84,13 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-full bg-white border border-[#D5D9E2] text-[#040819] placeholder:text-[#9CA3AF] text-sm sm:text-[15px] px-6 py-3 rounded-full focus:outline-none focus:border-[#040819] transition-colors"
+                  className="w-full bg-white border border-[#D5D9E2] text-[#040819] placeholder:text-[#9CA3AF] text-base sm:text-[15px] px-6 py-3 rounded-full focus:outline-none focus:border-[#040819] transition-colors"
                 />
               </div>
 
               <button
                 type="submit"
-                className="bg-[#CCFF00] hover:bg-[#b8eb00] active:scale-95 text-[#040819] font-medium text-sm sm:text-base px-8 py-3 rounded-full transition-all duration-200 shrink-0 cursor-pointer shadow-xs text-center"
+                className="bg-[#CCFF00] hover:bg-[#b8eb00] active:scale-95 text-[#040819] font-medium text-sm sm:text-base px-8 py-3 rounded-full transition-all duration-200 shrink-0 cursor-pointer shadow-xs text-center min-h-[44px]"
               >
                 Search
               </button>
@@ -117,14 +117,14 @@ export default function Footer() {
           </div>
 
           {/* Right Column: 3 Columns of Navigation Links */}
-          <div className="lg:col-span-6 xl:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 lg:justify-items-end">
+          <div className="lg:col-span-6 xl:col-span-7 grid grid-cols-2 xs:grid-cols-3 gap-6 sm:gap-10 lg:gap-12 xl:gap-16 lg:justify-items-end w-full">
             {/* Column 1 */}
-            <div className="flex flex-col space-y-3.5 sm:space-y-4">
+            <div className="flex flex-col space-y-3 sm:space-y-4">
               {column1Links.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-sm sm:text-[15px] text-[#333842] hover:text-[#0047FF] transition-colors font-['Satoshi',sans-serif] leading-normal"
+                  className="text-xs sm:text-[15px] text-[#333842] hover:text-[#0047FF] transition-colors font-['Satoshi',sans-serif] leading-normal py-0.5"
                 >
                   {link.label}
                 </Link>
@@ -132,12 +132,12 @@ export default function Footer() {
             </div>
 
             {/* Column 2 */}
-            <div className="flex flex-col space-y-3.5 sm:space-y-4">
+            <div className="flex flex-col space-y-3 sm:space-y-4">
               {column2Links.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-sm sm:text-[15px] text-[#333842] hover:text-[#0047FF] transition-colors font-['Satoshi',sans-serif] leading-normal"
+                  className="text-xs sm:text-[15px] text-[#333842] hover:text-[#0047FF] transition-colors font-['Satoshi',sans-serif] leading-normal py-0.5"
                 >
                   {link.label}
                 </Link>
@@ -145,12 +145,12 @@ export default function Footer() {
             </div>
 
             {/* Column 3 */}
-            <div className="flex flex-col space-y-3.5 sm:space-y-4">
+            <div className="flex flex-col space-y-3 sm:space-y-4 col-span-2 xs:col-span-1">
               {column3Links.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-sm sm:text-[15px] text-[#333842] hover:text-[#0047FF] transition-colors font-['Satoshi',sans-serif] leading-normal"
+                  className="text-xs sm:text-[15px] text-[#333842] hover:text-[#0047FF] transition-colors font-['Satoshi',sans-serif] leading-normal py-0.5"
                 >
                   {link.label}
                 </Link>

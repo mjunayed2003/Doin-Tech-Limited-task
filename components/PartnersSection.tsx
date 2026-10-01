@@ -12,11 +12,11 @@ export default function PartnersSection() {
   return (
     <section className="w-full bg-[#F5F6F8] py-8 sm:py-10 md:py-12 border-t border-slate-200/60 relative z-20">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-20">
-        <div className="flex flex-wrap items-center justify-between gap-6 sm:gap-8 md:gap-12 lg:gap-16">
+        <div className="flex flex-wrap items-center justify-center sm:justify-between gap-5 sm:gap-8 md:gap-12 lg:gap-16">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center transition-all duration-300 hover:scale-105 opacity-85 hover:opacity-100 cursor-pointer"
+              className="flex items-center justify-center transition-all duration-300 hover:scale-105 opacity-85 hover:opacity-100 cursor-pointer px-2"
             >
               <Image
                 src={logo.src}
