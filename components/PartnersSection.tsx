@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function PartnersSection() {
   const logos = [
-    { src: "/Frame1.png", alt: "Logoipsum Partner 1" },
-    { src: "/Frame2.png", alt: "Logoipsum Partner 2" },
-    { src: "/Frame3.png", alt: "Logoipsum Partner 3" },
-    { src: "/Frame4.png", alt: "Logoipsum Partner 4" },
-    { src: "/Frame5.png", alt: "Logoipsum Partner 5" },
+    { src: "/images/Frame1.png", alt: "Logoipsum Partner 1" },
+    { src: "/images/Frame2.png", alt: "Logoipsum Partner 2" },
+    { src: "/images/Frame3.png", alt: "Logoipsum Partner 3" },
+    { src: "/images/Frame4.png", alt: "Logoipsum Partner 4" },
+    { src: "/images/Frame5.png", alt: "Logoipsum Partner 5" },
   ];
 
   return (

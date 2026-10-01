@@ -55,7 +55,7 @@ export default function CoursesPage() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-1.png",
+      image: "/images/course-1.png",
       category: "UI/UX Design",
     },
     {
@@ -65,7 +65,7 @@ export default function CoursesPage() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-2.png",
+      image: "/images/course-2.png",
       category: "Drawing & Painting",
     },
     {
@@ -75,7 +75,7 @@ export default function CoursesPage() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-3.png",
+      image: "/images/course-3.png",
       category: "Marketing",
     },
     {
@@ -85,7 +85,7 @@ export default function CoursesPage() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-4.png",
+      image: "/images/course-4.png",
       category: "Featured",
     },
     {
@@ -95,7 +95,7 @@ export default function CoursesPage() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-5.png",
+      image: "/images/course-5.png",
       category: "Featured",
     },
     {
@@ -105,7 +105,7 @@ export default function CoursesPage() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-6.png",
+      image: "/images/course-6.png",
       category: "Creative Marketing",
     },
   ];

@@ -24,7 +24,7 @@ export default function HeroSection() {
       {/* Top-Left Yellow Coil (Flush against left edge with zero gap) */}
       <div className="hidden lg:block absolute left-0 top-1 xl:top-3 z-20 pointer-events-none animate-float-edge-y">
         <Image
-          src="/shape-coil-left.png"
+          src="/images/shape-coil-left.png"
           alt="Decorative 3D Coil"
           width={130}
           height={240}
@@ -36,7 +36,7 @@ export default function HeroSection() {
       {/* Mid-Left White Wavy Spring */}
       <div className="hidden lg:block absolute left-14 xl:left-24 2xl:left-32 top-48 xl:top-52 z-20 pointer-events-none animate-float-reverse">
         <Image
-          src="/shape-spring-left.png"
+          src="/images/shape-spring-left.png"
           alt="Decorative 3D Spring"
           width={90}
           height={120}
@@ -48,7 +48,7 @@ export default function HeroSection() {
       {/* Bottom-Left White Torus / Donut */}
       <div className="hidden lg:block absolute left-2 xl:left-6 2xl:left-12 bottom-4 xl:bottom-8 z-20 pointer-events-none animate-float-drift">
         <Image
-          src="/shape-torus.png"
+          src="/images/shape-torus.png"
           alt="Decorative 3D Torus"
           width={160}
           height={135}
@@ -60,7 +60,7 @@ export default function HeroSection() {
       {/* Top-Right Lime Cylinder (Flush against right edge with zero gap) */}
       <div className="hidden lg:block absolute right-0 top-1 xl:top-2 z-20 pointer-events-none animate-float-edge-y">
         <Image
-          src="/shape-cylinder.png"
+          src="/images/shape-cylinder.png"
           alt="Decorative 3D Cylinder"
           width={125}
           height={230}
@@ -72,7 +72,7 @@ export default function HeroSection() {
       {/* Mid-Right White Cone */}
       <div className="hidden lg:block absolute right-16 xl:right-24 2xl:right-32 top-50 xl:top-56 z-20 pointer-events-none animate-float-slow">
         <Image
-          src="/shape-cone.png"
+          src="/images/shape-cone.png"
           alt="Decorative 3D Cone"
           width={95}
           height={115}
@@ -84,7 +84,7 @@ export default function HeroSection() {
       {/* Bottom-Right White Spiral */}
       <div className="hidden lg:block absolute right-2 xl:right-8 2xl:right-14 bottom-6 xl:bottom-10 z-20 pointer-events-none animate-float-reverse">
         <Image
-          src="/shape-spiral.png"
+          src="/images/shape-spiral.png"
           alt="Decorative 3D Spiral"
           width={140}
           height={140}
@@ -94,7 +94,7 @@ export default function HeroSection() {
       </div>
 
       {/* Top Section: Full Width Headline & Search Area */}
-      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-30 text-center pt-4 sm:pt-6 shrink-0">
+      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-30 text-center pt-6 sm:pt-8 lg:pt-10 shrink-0">
         {/* Main Heading matching Figma inspect properties */}
         <h1 className="text-white font-semibold text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[72px] leading-[118%] tracking-[-0.01em] max-w-[935px] mx-auto text-center px-1 sm:px-4">
           Get Access to Hundreds Courses Available
@@ -153,7 +153,7 @@ export default function HeroSection() {
         {/* Full-Width Lime Green Arc in Background */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1480px] xl:max-w-[1650px] 2xl:max-w-[1800px] pointer-events-none z-0 px-2 sm:px-4 flex justify-center">
           <Image
-            src="/Ellipse 7 cercle.png"
+            src="/images/Ellipse 7 cercle.png"
             alt="Lime Green Arc"
             width={1149}
             height={442}
@@ -167,7 +167,7 @@ export default function HeroSection() {
           {/* Student with Laptop (man.png) */}
           <div className="w-[220px] xs:w-[260px] sm:w-[350px] md:w-[430px] lg:w-[470px] xl:w-[500px] shrink-0 bottom-0 relative z-10">
             <Image
-              src="/man.png"
+              src="/images/man.png"
               alt="Student with laptop and headphones"
               width={722}
               height={515}

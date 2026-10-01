@@ -60,7 +60,7 @@ export default function CoursesSection() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-1.png",
+      image: "/images/course-1.png",
     },
     {
       id: "2",
@@ -69,7 +69,7 @@ export default function CoursesSection() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-2.png",
+      image: "/images/course-2.png",
     },
     {
       id: "3",
@@ -78,7 +78,7 @@ export default function CoursesSection() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-3.png",
+      image: "/images/course-3.png",
     },
     {
       id: "4",
@@ -87,7 +87,7 @@ export default function CoursesSection() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-4.png",
+      image: "/images/course-4.png",
     },
     {
       id: "5",
@@ -96,7 +96,7 @@ export default function CoursesSection() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-5.png",
+      image: "/images/course-5.png",
     },
     {
       id: "6",
@@ -105,7 +105,7 @@ export default function CoursesSection() {
       rating: 4.5,
       level: "Beginner",
       price: 25,
-      image: "/course-6.png",
+      image: "/images/course-6.png",
     },
   ];
 

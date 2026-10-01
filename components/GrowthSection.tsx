@@ -132,7 +132,7 @@ export default function GrowthSection() {
               <div className="absolute right-3 sm:right-12 lg:right-16 top-0 sm:top-4 z-10 pointer-events-none">
                 <div className="relative w-12 h-18 sm:w-24 sm:h-34 drop-shadow-[0_10px_20px_rgba(204,255,0,0.55)]">
                   <Image
-                    src="/shape-spring-left.png"
+                    src="/images/shape-spring-left.png"
                     alt="3D Lime Spring"
                     width={90}
                     height={120}
@@ -186,7 +186,7 @@ export default function GrowthSection() {
               <div className="absolute right-3 sm:right-12 lg:right-16 top-16 sm:top-30 z-10 pointer-events-none">
                 <div className="relative w-14 h-20 sm:w-24 sm:h-34 drop-shadow-[0_10px_20px_rgba(204,255,0,0.55)]">
                   <Image
-                    src="/shape-spring-left.png"
+                    src="/images/shape-spring-left.png"
                     alt="3D Lime Spring"
                     width={90}
                     height={120}

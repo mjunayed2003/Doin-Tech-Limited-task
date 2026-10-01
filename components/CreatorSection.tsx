@@ -25,7 +25,7 @@ export default function CreatorSection() {
       {/* 1. Top-Left Yellow/Lime 3D Coil (Flush against left edge) */}
       <div className="absolute -left-1 sm:left-0 top-0 sm:top-1 z-10 pointer-events-none animate-float-edge-y">
         <Image
-          src="/shape-coil-left.png"
+          src="/images/shape-coil-left.png"
           alt="3D Decorative Coil"
           width={130}
           height={240}
@@ -36,7 +36,7 @@ export default function CreatorSection() {
       {/* 2. Upper Mid-Left White Wavy Spring */}
       <div className="hidden sm:block absolute left-[12%] lg:left-[14%] top-[10%] lg:top-[12%] z-10 pointer-events-none animate-float-reverse">
         <Image
-          src="/shape-spring-left.png"
+          src="/images/shape-spring-left.png"
           alt="3D White Spring"
           width={90}
           height={120}
@@ -47,7 +47,7 @@ export default function CreatorSection() {
       {/* 3. Mid-Left White Cone (Flush against left border, pointing inwards) */}
       <div className="hidden md:block absolute left-0 top-[52%] sm:top-[50%] -translate-y-1/2 z-10 pointer-events-none animate-float-slow">
         <Image
-          src="/shape-cone.png"
+          src="/images/shape-cone.png"
           alt="3D White Cone"
           width={95}
           height={115}
@@ -59,7 +59,7 @@ export default function CreatorSection() {
       <div className="absolute left-[2%] sm:left-[5%] lg:left-[6%] -bottom-6 sm:-bottom-14 lg:-bottom-20 z-10 pointer-events-none animate-float-drift">
         <div className="relative w-[95px] sm:w-[180px] md:w-[220px] lg:w-[260px] h-auto drop-shadow-[0_16px_36px_rgba(0,0,0,0.4)] -rotate-12">
           <Image
-            src="/shape-torus.png"
+            src="/images/shape-torus.png"
             alt="3D Lime Torus"
             width={160}
             height={135}
@@ -73,7 +73,7 @@ export default function CreatorSection() {
       <div className="hidden sm:block absolute right-[15%] lg:right-[17%] top-[10%] lg:top-[12%] z-10 pointer-events-none animate-float-slow">
         <div className="relative w-[55px] md:w-[75px] lg:w-[90px] h-auto drop-shadow-[0_10px_24px_rgba(0,0,0,0.3)]">
           <Image
-            src="/shape-cone.png"
+            src="/images/shape-cone.png"
             alt="3D Lime Cone"
             width={95}
             height={115}
@@ -86,7 +86,7 @@ export default function CreatorSection() {
       {/* 6. Top-Right White 3D Cylinder (Flush against right edge) */}
       <div className="absolute right-0 top-0 sm:top-1 z-10 pointer-events-none animate-float-edge-y">
         <Image
-          src="/shape-cylinder.png"
+          src="/images/shape-cylinder.png"
           alt="3D White Cylinder"
           width={125}
           height={230}
@@ -98,7 +98,7 @@ export default function CreatorSection() {
       <div className="absolute right-0 sm:right-3 lg:right-6 -bottom-6 sm:-bottom-12 lg:-bottom-16 z-10 pointer-events-none animate-float-reverse">
         <div className="relative w-[85px] sm:w-[140px] md:w-[175px] lg:w-[210px] h-auto drop-shadow-[0_16px_36px_rgba(0,0,0,0.4)]">
           <Image
-            src="/shape-spring-left.png"
+            src="/images/shape-spring-left.png"
             alt="3D Lime Spring"
             width={90}
             height={120}
