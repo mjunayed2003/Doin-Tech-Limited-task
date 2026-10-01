@@ -22,8 +22,8 @@ export default function CreatorSection() {
       {/* 3D Decorative Floating Shapes (Figma 1:1 Placement)        */}
       {/* ========================================================= */}
 
-      {/* 1. Top-Left Yellow/Lime 3D Coil (Flush against left edge) */}
-      <div className="absolute -left-1 sm:left-0 top-0 sm:top-1 z-10 pointer-events-none animate-float-edge-y">
+      {/* 1. Top-Left Yellow/Lime 3D Coil (Flush against left edge with zero gap) */}
+      <div className="absolute -left-[7px] sm:-left-[10px] md:-left-[12px] lg:-left-[14px] top-0 sm:top-1 z-10 pointer-events-none animate-float-edge-y">
         <Image
           src="/images/shape-coil-left.png"
           alt="3D Decorative Coil"
@@ -83,8 +83,8 @@ export default function CreatorSection() {
         </div>
       </div>
 
-      {/* 6. Top-Right White 3D Cylinder (Flush against right edge) */}
-      <div className="absolute right-0 top-0 sm:top-1 z-10 pointer-events-none animate-float-edge-y">
+      {/* 6. Top-Right White 3D Cylinder (Flush against right edge with zero gap) */}
+      <div className="absolute -right-[7px] sm:-right-[10px] md:-right-[12px] lg:-right-[14px] top-0 sm:top-1 z-10 pointer-events-none animate-float-edge-y">
         <Image
           src="/images/shape-cylinder.png"
           alt="3D White Cylinder"
