@@ -21,8 +21,8 @@ export default function NotFound() {
               404
             </div>
 
-            {/* Overlaid Headline positioned directly across lower half of 404 */}
-            <div className="-mt-14 xs:-mt-20 sm:-mt-28 md:-mt-36 lg:-mt-44 xl:-mt-48 relative z-10 flex flex-col items-center text-center px-4 w-full">
+            {/* Overlaid Headline positioned further down near the bottom of 404 */}
+            <div className="-mt-6 xs:-mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20 xl:-mt-24 relative z-10 flex flex-col items-center text-center px-4 w-full">
               {/* Exactly 2 lines matching Figma */}
               <h1 className="text-white font-bold text-[26px] xs:text-[34px] sm:text-[48px] md:text-[56px] lg:text-[64px] xl:text-[70px] leading-[1.15] tracking-tight text-center drop-shadow-sm font-sans">
                 <span className="block whitespace-nowrap">The page you are looking</span>

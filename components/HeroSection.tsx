@@ -94,7 +94,7 @@ export default function HeroSection() {
       </div>
 
       {/* Top Section: Full Width Headline & Search Area */}
-      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-30 text-center pt-2 sm:pt-4 shrink-0">
+      <div className="w-full px-4 sm:px-6 lg:px-8 relative z-30 text-center pt-4 sm:pt-6 shrink-0">
         {/* Main Heading matching Figma inspect properties */}
         <h1 className="text-white font-semibold text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[72px] leading-[118%] tracking-[-0.01em] max-w-[935px] mx-auto text-center px-1 sm:px-4">
           Get Access to Hundreds Courses Available
